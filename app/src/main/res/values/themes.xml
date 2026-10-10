@@ -1,0 +1,76 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme - Light mode -->
+    <style name="Base.Theme.HiddenType" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/md_primary_light</item>
+        <item name="colorOnPrimary">@color/md_on_primary_light</item>
+        <item name="colorPrimaryContainer">@color/md_primary_container_light</item>
+        <item name="colorOnPrimaryContainer">@color/md_on_primary_container_light</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/md_secondary_light</item>
+        <item name="colorOnSecondary">@color/md_on_secondary_light</item>
+
+        <!-- Tertiary - Amber for privacy/security feel -->
+        <item name="colorTertiary">@color/md_accent_light</item>
+        <item name="colorOnTertiary">@color/md_on_accent_light</item>
+
+        <!-- Background and surface -->
+        <item name="android:colorBackground">@color/md_background_light</item>
+        <item name="colorSurface">@color/md_surface_light</item>
+        <item name="colorOnSurface">@color/md_on_surface_light</item>
+        <item name="colorSurfaceVariant">@color/md_surface_variant_light</item>
+        <item name="colorOnSurfaceVariant">@color/md_on_surface_variant_light</item>
+
+        <!-- Outline -->
+        <item name="colorOutline">@color/md_outline_light</item>
+        <item name="colorOutlineVariant">@color/md_outline_variant_light</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/md_error_light</item>
+        <item name="colorOnError">@color/md_on_error_light</item>
+
+        <!-- Text selection highlight - using amber accent -->
+        <item name="colorAccent">@color/md_accent_light</item>
+        <item name="android:textColorHighlight">@color/md_highlight_alpha_light</item>
+
+        <!-- Status bar - transparent, light content -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+
+        <!-- Shape appearance - rounded corners -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
+    </style>
+
+    <style name="Theme.HiddenType" parent="Base.Theme.HiddenType">
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <!-- Shape appearances - Modern rounded design -->
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Window animations -->
+    <style name="WindowAnimationTransition" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+</resources>

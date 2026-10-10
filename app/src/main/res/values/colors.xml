@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Amber accent for privacy indicator -->
+    <color name="amber_500">#d4a017</color>
+    <color name="amber_400">#e8c547</color>
+    <color name="amber_alpha_15">#26d4a017</color>
+    <color name="amber_alpha_10">#1Ad4a017</color>
+
+    <!-- Transparency variants -->
+    <color name="white_alpha_05">#0DFFFFFF</color>
+    <color name="white_alpha_08">#14FFFFFF</color>
+    <color name="white_alpha_10">#1AFFFFFF</color>
+    <color name="white_alpha_20">#33FFFFFF</color>
+    <color name="black_alpha_05">#0D000000</color>
+    <color name="black_alpha_10">#1A000000</color>
+    <color name="black_alpha_20">#33000000</color>
+
+    <!-- Placeholder colors -->
+    <color name="placeholder_light">#8a8880</color>
+    <color name="placeholder_dark">#5c5c6c</color>
+
+    <!-- Mask block color for hidden text -->
+    <color name="mask_block_color">#999999</color>
+
+    <!-- Note highlight color (current note in list) -->
+    <color name="note_highlight">#f0ede8</color>
+</resources>

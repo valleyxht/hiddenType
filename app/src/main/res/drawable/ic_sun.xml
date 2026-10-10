@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Center circle -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M12,7c-2.76,0 -5,2.24 -5,5s2.24,5 5,5s5,-2.24 5,-5s-2.24,-5 -5,-5zM12,15c-1.65,0 -3,-1.35 -3,-3s1.35,-3 3,-3s3,1.35 3,3s-1.35,3 -3,3z" />
+
+    <!-- Top ray -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M11,1h2v3h-2z" />
+
+    <!-- Bottom ray -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M11,20h2v3h-2z" />
+
+    <!-- Left ray -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M1,11h3v2h-3z" />
+
+    <!-- Right ray -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M20,11h3v2h-3z" />
+
+    <!-- Top-left ray -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M4.22,5.64l1.42,-1.42l2.12,2.12l-1.42,1.42z" />
+
+    <!-- Top-right ray -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M16.24,6.34l2.12,-2.12l1.42,1.42l-2.12,2.12z" />
+
+    <!-- Bottom-left ray -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M5.64,18.36l-1.42,-1.42l2.12,-2.12l1.42,1.42z" />
+
+    <!-- Bottom-right ray -->
+    <path
+        android:fillColor="?attr/colorOnSurface"
+        android:pathData="M18.36,18.36l-2.12,-2.12l1.42,-1.42l2.12,2.12z" />
+</vector>

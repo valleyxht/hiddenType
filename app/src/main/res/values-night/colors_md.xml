@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme Colors - Deep dark with warm tones -->
+    <color name="md_primary_dark">#e0ddd6</color>
+    <color name="md_on_primary_dark">#0f0f11</color>
+    <color name="md_primary_container_dark">#1c1c22</color>
+    <color name="md_on_primary_container_dark">#e0ddd6</color>
+
+    <color name="md_secondary_dark">#1c1c22</color>
+    <color name="md_on_secondary_dark">#e0ddd6</color>
+
+    <!-- Accent - Amber for privacy indicator -->
+    <color name="md_accent_dark">#e8c547</color>
+    <color name="md_on_accent_dark">#0f0f11</color>
+
+    <!-- Background and surface - Deep dark -->
+    <color name="md_background_dark">#0f0f11</color>
+    <color name="md_surface_dark">#141418</color>
+    <color name="md_on_surface_dark">#e0ddd6</color>
+    <color name="md_surface_variant_dark">#1a1a20</color>
+    <color name="md_on_surface_variant_dark">#5c5c6c</color>
+
+    <!-- Outline and borders -->
+    <color name="md_outline_dark">#1e1e26</color>
+    <color name="md_outline_variant_dark">#1a1a20</color>
+
+    <!-- Error -->
+    <color name="md_error_dark">#8b2020</color>
+    <color name="md_on_error_dark">#f8b4b4</color>
+
+    <!-- Card -->
+    <color name="md_card_dark">#141418</color>
+    <color name="md_card_foreground_dark">#e0ddd6</color>
+
+    <!-- Muted -->
+    <color name="md_muted_dark">#1a1a20</color>
+    <color name="md_muted_foreground_dark">#5c5c6c</color>
+
+    <!-- Amber accent for privacy -->
+    <color name="md_amber_500_dark">#e8c547</color>
+    <color name="md_amber_400_dark">#f0d878</color>
+
+    <!-- Highlight -->
+    <color name="md_highlight_dark">#e8c547</color>
+    <color name="md_highlight_alpha_dark">#33e8c547</color>
+</resources>

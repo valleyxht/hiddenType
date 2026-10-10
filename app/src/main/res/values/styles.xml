@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="titleTextColor">?attr/colorOnSurface</item>
+        <item name="subtitleTextColor">?attr/colorOnSurfaceVariant</item>
+    </style>
+
+    <style name="Widget.App.Button.Icon" parent="Widget.Material3.Button.IconButton">
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="iconTint">?attr/colorOnSurfaceVariant</item>
+        <item name="android:minWidth">32dp</item>
+        <item name="android:minHeight">32dp</item>
+    </style>
+
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+
+    <style name="Widget.App.EditText" parent="Widget.Material3.TextInputEditText.FilledBox">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textColorHint">?attr/colorOnSurfaceVariant</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_accent</item>
+        <item name="android:fontFamily">monospace</item>
+    </style>
+
+    <style name="Widget.App.TextView.Mono" parent="android:Widget.TextView">
+        <item name="android:fontFamily">monospace</item>
+    </style>
+</resources>

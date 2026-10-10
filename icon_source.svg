@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Warm paper gradient -->
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stopColor="#FFFEF8" />
+      <stop offset="100%" stopColor="#FFF3E0" />
+    </linearGradient>
+
+    <!-- Tile drop shadow -->
+    <filter id="shadow" x="-6%" y="-4%" width="112%" height="114%">
+      <feDropShadow dx="0" dy="12" stdDeviation="28"
+        floodColor="#3020a0" floodOpacity="0.14" />
+      <feDropShadow dx="0" dy="3" stdDeviation="8"
+        floodColor="#000000" floodOpacity="0.06" />
+    </filter>
+
+    <!-- Text-line gradients -->
+    <linearGradient id="l1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stopColor="#2E28A8" stopOpacity="0.09" />
+      <stop offset="92%"  stopColor="#2E28A8" stopOpacity="0.10" />
+      <stop offset="97%"  stopColor="#2E28A8" stopOpacity="0.32" />
+      <stop offset="100%" stopColor="#2E28A8" stopOpacity="0.55" />
+    </linearGradient>
+    <linearGradient id="l2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stopColor="#2E28A8" stopOpacity="0.10" />
+      <stop offset="83%"  stopColor="#2E28A8" stopOpacity="0.11" />
+      <stop offset="93%"  stopColor="#2E28A8" stopOpacity="0.38" />
+      <stop offset="100%" stopColor="#2E28A8" stopOpacity="0.68" />
+    </linearGradient>
+    <linearGradient id="l3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stopColor="#2E28A8" stopOpacity="0.11" />
+      <stop offset="73%"  stopColor="#2E28A8" stopOpacity="0.12" />
+      <stop offset="87%"  stopColor="#2E28A8" stopOpacity="0.46" />
+      <stop offset="100%" stopColor="#2E28A8" stopOpacity="0.78" />
+    </linearGradient>
+    <linearGradient id="l4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stopColor="#2E28A8" stopOpacity="0.12" />
+      <stop offset="60%"  stopColor="#2E28A8" stopOpacity="0.13" />
+      <stop offset="79%"  stopColor="#2E28A8" stopOpacity="0.55" />
+      <stop offset="100%" stopColor="#2E28A8" stopOpacity="0.86" />
+    </linearGradient>
+    <linearGradient id="l5" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stopColor="#2E28A8" stopOpacity="0.12" />
+      <stop offset="44%"  stopColor="#2E28A8" stopOpacity="0.14" />
+      <stop offset="64%"  stopColor="#2E28A8" stopOpacity="0.62" />
+      <stop offset="100%" stopColor="#3830c0" stopOpacity="0.92" />
+    </linearGradient>
+
+    <!-- Pencil body gradient -->
+    <linearGradient id="pencil-body" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stopColor="#FFCF30" />
+      <stop offset="100%" stopColor="#F5A800" />
+    </linearGradient>
+
+    <!-- Cursor glow -->
+    <filter id="cglow" x="-400%" y="-80%" width="900%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="b" />
+      <feMerge>
+        <feMergeNode in="b" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <clipPath id="tile-clip">
+      <rect width="1024" height="1024" rx="210" />
+    </clipPath>
+  </defs>
+
+  <!-- Tile -->
+  <rect width="1024" height="1024" rx="210" fill="url(#paper)" filter="url(#shadow)" />
+
+  <g clipPath="url(#tile-clip)">
+    <!-- Notepad ruled lines -->
+    <line x1="0" y1="300" x2="1024" y2="300" stroke="#D8D0F8" stroke-width="1.5" opacity="0.35" />
+    <line x1="0" y1="380" x2="1024" y2="380" stroke="#D8D0F8" stroke-width="1.5" opacity="0.35" />
+    <line x1="0" y1="460" x2="1024" y2="460" stroke="#D8D0F8" stroke-width="1.5" opacity="0.35" />
+    <line x1="0" y1="540" x2="1024" y2="540" stroke="#D8D0F8" stroke-width="1.5" opacity="0.35" />
+    <line x1="0" y1="620" x2="1024" y2="620" stroke="#D8D0F8" stroke-width="1.5" opacity="0.35" />
+    <line x1="0" y1="700" x2="1024" y2="700" stroke="#D8D0F8" stroke-width="1.5" opacity="0.35" />
+    <line x1="0" y1="780" x2="1024" y2="780" stroke="#D8D0F8" stroke-width="1.5" opacity="0.35" />
+
+    <!-- Left margin rule -->
+    <line x1="196" y1="0" x2="196" y2="1024" stroke="#F0A0A0" stroke-width="2.5" opacity="0.50" />
+
+    <!-- Top header band -->
+    <rect x="0" y="0" width="1024" height="200" fill="#F5F0FF" opacity="0.55" />
+    <line x1="0" y1="200" x2="1024" y2="200" stroke="#C8B8F0" stroke-width="2" opacity="0.50" />
+
+    <!-- Pencil (top-right, angled) -->
+    <g transform="translate(808, 98) rotate(40)">
+      <rect x="-15" y="-108" width="30" height="20" rx="6" fill="#F07070" />
+      <rect x="-15" y="-90" width="30" height="6" fill="#C85858" />
+      <rect x="-15" y="-84" width="30" height="122" fill="url(#pencil-body)" />
+      <rect x="-15" y="-84" width="6" height="122" fill="white" opacity="0.18" />
+      <polygon points="-15,38 15,38 8,68 -8,68" fill="#C87A3A" />
+      <polygon points="-8,68 8,68 0,82" fill="#2A2A3A" />
+    </g>
+
+    <!-- App name in header -->
+    <text x="236" y="136" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="400" font-style="italic" fill="#3830a8" opacity="0.55" letter-spacing="1">HiddenType</text>
+
+    <!-- Text lines (content area) -->
+    <rect x="224" y="281" width="570" height="38" rx="6" fill="url(#l1)" />
+    <rect x="224" y="361" width="590" height="38" rx="6" fill="url(#l2)" />
+    <rect x="224" y="441" width="555" height="38" rx="6" fill="url(#l3)" />
+    <rect x="224" y="521" width="604" height="38" rx="6" fill="url(#l4)" />
+    <rect x="224" y="601" width="604" height="38" rx="6" fill="url(#l5)" />
+
+    <!-- Cursor on line 5 -->
+    <rect x="824" y="606" width="5" height="28" rx="2.5" fill="#3830C0" opacity="0.88" filter="url(#cglow)" />
+  </g>
+</svg>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <!-- Top bar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?attr/colorSurface"
+            app:contentInsetStart="16dp"
+            app:contentInsetEnd="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Brand -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="8dp">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_lock"
+                        app:tint="?attr/colorOnSurfaceVariant"
+                        android:layout_marginEnd="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brand_name"
+                        android:textSize="11sp"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:fontFamily="monospace"
+                        android:letterSpacing="0.12" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/separator"
+                    android:textSize="14sp"
+                    android:textColor="?attr/colorOutline"
+                    android:layout_marginHorizontal="4dp" />
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/toolbarTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/untitled"
+                    android:textSize="14sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium" />
+
+                <!-- Actions -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnToggleVisibility"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_visibility_off"
+                        app:tint="?attr/colorOnSurfaceVariant"
+                        android:padding="6dp"
+                        android:contentDescription="@string/show_all" />
+
+                    <ImageButton
+                        android:id="@+id/btnTogglePanel"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_file_text"
+                        app:tint="?attr/colorOnSurfaceVariant"
+                        android:padding="6dp"
+                        android:contentDescription="@string/note_list" />
+
+                    <ImageButton
+                        android:id="@+id/btnToggleSettings"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_settings"
+                        app:tint="?attr/colorOnSurfaceVariant"
+                        android:padding="6dp"
+                        android:contentDescription="@string/settings" />
+
+                    <ImageButton
+                        android:id="@+id/btnToggleTheme"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_sun"
+                        app:tint="?attr/colorOnSurfaceVariant"
+                        android:padding="6dp"
+                        android:contentDescription="@string/light_theme" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <!-- Settings strip -->
+        <LinearLayout
+            android:id="@+id/settingsStrip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:background="?attr/colorSurface"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/visible_chars_count"
+                android:textSize="11sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.1"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageButton
+                    android:id="@+id/btnDecreaseCount"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_minus"
+                    app:tint="?attr/colorOnSurfaceVariant"
+                    android:padding="4dp" />
+
+                <TextView
+                    android:id="@+id/tvRevealCount"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_reveal_number"
+                    android:textSize="14sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:gravity="center"
+                    android:fontFamily="monospace" />
+
+                <ImageButton
+                    android:id="@+id/btnIncreaseCount"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_plus"
+                    app:tint="?attr/colorOnSurfaceVariant"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/default_reveal_count"
+                android:textSize="10sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:alpha="0.5"
+                android:fontFamily="monospace"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Content area — FrameLayout so panel overlays the editor -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Editor (full width, always) -->
+        <FrameLayout
+            android:id="@+id/editorContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/editorContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="36dp">
+
+                <!-- Placeholder -->
+                <TextView
+                    android:id="@+id/tvPlaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="32dp"
+                    android:text="@string/placeholder_hint"
+                    android:textSize="14sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:alpha="0.35"
+                    android:fontFamily="monospace"
+                    android:visibility="gone" />
+
+                <!-- Masked display layer -->
+                <io.github.valleyxht.hiddentype.MaskedTextView
+                    android:id="@+id/tvMaskedContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="32dp"
+                    android:textSize="14sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:lineSpacingExtra="6dp"
+                    android:fontFamily="monospace"
+                    android:breakStrategy="simple"
+                    android:scrollbars="vertical"
+                    android:visibility="visible" />
+
+                <!-- Transparent input layer — handles input and cursor only, display via tvMaskedContent -->
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="32dp"
+                    android:textSize="14sp"
+                    android:lineSpacingExtra="6dp"
+                    android:fontFamily="monospace"
+                    android:breakStrategy="simple"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/transparent"
+                    android:cursorVisible="true"
+                    android:textCursorDrawable="@drawable/cursor_accent"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:gravity="top|start"
+                    android:scrollbars="vertical"
+                    android:hint="" />
+            </FrameLayout>
+
+            <!-- Dim overlay — shown when panel is open, clicking it closes the panel -->
+            <View
+                android:id="@+id/dimOverlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#40000000"
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Status bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="32dp"
+                android:background="?attr/colorSurface">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvCharCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/char_count_zero"
+                        android:textSize="11sp"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:fontFamily="monospace" />
+
+                    <LinearLayout
+                        android:id="@+id/protectedIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="12dp"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="6dp"
+                            android:layout_height="6dp"
+                            android:background="@drawable/amber_dot"
+                            android:layout_marginEnd="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/protected_mode"
+                            android:textSize="11sp"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:fontFamily="monospace" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvUpdateTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/just_now"
+                    android:textSize="11sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:alpha="0.4"
+                    android:fontFamily="monospace" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Files panel — overlays the editor on the right side -->
+        <LinearLayout
+            android:id="@+id/panelContainer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="vertical"
+            android:background="?attr/colorSurface"
+            android:elevation="16dp"
+            android:visibility="gone">
+
+            <!-- Panel header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="16dp"
+                android:background="?attr/colorSurface">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/note_list"
+                    android:textSize="11sp"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="0.1" />
+
+                <ImageButton
+                    android:id="@+id/btnNewNote"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_plus"
+                    app:tint="?attr/colorOnSurfaceVariant"
+                    android:padding="4dp"
+                    android:contentDescription="@string/new_note_btn" />
+            </LinearLayout>
+
+            <!-- Notes list -->
+            <ListView
+                android:id="@+id/listViewNotes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

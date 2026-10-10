@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FAB animations -->
+    <style name="FabAnimation">
+        <item name="android:enterFadeDuration">200</item>
+        <item name="android:exitFadeDuration">200</item>
+    </style>
+</resources>

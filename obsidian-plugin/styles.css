@@ -1,0 +1,33 @@
+.hidden-type-masked {
+  color: var(--text-faint) !important;
+  color: color-mix(in srgb, var(--text-normal) 24%, transparent) !important;
+  -webkit-text-fill-color: var(--text-faint) !important;
+  -webkit-text-fill-color: color-mix(in srgb, var(--text-normal) 24%, transparent) !important;
+  background-color: color-mix(in srgb, var(--text-muted) 12%, transparent) !important;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 3px,
+    color-mix(in srgb, var(--text-muted) 24%, transparent) 3px,
+    color-mix(in srgb, var(--text-muted) 24%, transparent) 4px
+  ) !important;
+  border-radius: 2px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  filter: blur(0.65px);
+  text-shadow: none !important;
+}
+
+.hidden-type-status {
+  cursor: pointer;
+  color: var(--text-accent);
+  user-select: none;
+}
+
+.hidden-type-status.is-revealed {
+  color: var(--text-muted);
+}
+
+.hidden-type-status.is-disabled {
+  color: var(--text-faint);
+}

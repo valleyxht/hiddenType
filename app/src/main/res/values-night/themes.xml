@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme - Dark mode -->
+    <style name="Base.Theme.HiddenType" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/md_primary_dark</item>
+        <item name="colorOnPrimary">@color/md_on_primary_dark</item>
+        <item name="colorPrimaryContainer">@color/md_primary_container_dark</item>
+        <item name="colorOnPrimaryContainer">@color/md_on_primary_container_dark</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/md_secondary_dark</item>
+        <item name="colorOnSecondary">@color/md_on_secondary_dark</item>
+
+        <!-- Tertiary - Amber for privacy/security feel -->
+        <item name="colorTertiary">@color/md_accent_dark</item>
+        <item name="colorOnTertiary">@color/md_on_accent_dark</item>
+
+        <!-- Background and surface -->
+        <item name="android:colorBackground">@color/md_background_dark</item>
+        <item name="colorSurface">@color/md_surface_dark</item>
+        <item name="colorOnSurface">@color/md_on_surface_dark</item>
+        <item name="colorSurfaceVariant">@color/md_surface_variant_dark</item>
+        <item name="colorOnSurfaceVariant">@color/md_on_surface_variant_dark</item>
+
+        <!-- Outline -->
+        <item name="colorOutline">@color/md_outline_dark</item>
+        <item name="colorOutlineVariant">@color/md_outline_variant_dark</item>
+
+        <!-- Error -->
+        <item name="colorError">@color/md_error_dark</item>
+        <item name="colorOnError">@color/md_on_error_dark</item>
+
+        <!-- Text selection highlight - using amber accent -->
+        <item name="colorAccent">@color/md_accent_dark</item>
+        <item name="android:textColorHighlight">@color/md_highlight_alpha_dark</item>
+
+        <!-- Status bar - transparent, dark content -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <!-- Shape appearance - rounded corners -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.App.LargeComponent</item>
+    </style>
+</resources>

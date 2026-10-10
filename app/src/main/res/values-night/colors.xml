@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Mask block color for hidden text (dark theme: lighter blocks) -->
+    <color name="mask_block_color">#5c5c6c</color>
+
+    <!-- Note highlight color (current note in list) - dark subtle tone -->
+    <color name="note_highlight">#1a1a20</color>
+</resources>

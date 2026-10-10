@@ -1,0 +1,22 @@
+{
+  "name": "hidden-type-obsidian",
+  "version": "1.1.1",
+  "private": true,
+  "description": "HiddenType privacy writing mode for Obsidian.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit --skipLibCheck && node esbuild.config.mjs production",
+    "test": "esbuild tests/editor-extension.test.ts --bundle --platform=node --format=cjs --outfile=dist/editor-extension.test.cjs && node dist/editor-extension.test.cjs",
+    "package": "powershell -NoProfile -ExecutionPolicy Bypass -File package.ps1"
+  },
+  "devDependencies": {
+    "@codemirror/state": "6.5.0",
+    "@codemirror/view": "6.38.6",
+    "@types/node": "^22.15.3",
+    "builtin-modules": "^4.0.0",
+    "esbuild": "^0.25.4",
+    "obsidian": "latest",
+    "typescript": "^5.8.3"
+  }
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme Colors - Warm paper-like feel -->
+    <color name="md_primary_light">#1c1c1e</color>
+    <color name="md_on_primary_light">#f8f7f4</color>
+    <color name="md_primary_container_light">#eeece8</color>
+    <color name="md_on_primary_container_light">#1c1c1e</color>
+
+    <color name="md_secondary_light">#eeece8</color>
+    <color name="md_on_secondary_light">#1c1c1e</color>
+
+    <!-- Accent - Amber for privacy indicator -->
+    <color name="md_accent_light">#d4a017</color>
+    <color name="md_on_accent_light">#1c1c1e</color>
+
+    <!-- Background and surface - Warm paper tones -->
+    <color name="md_background_light">#f8f7f4</color>
+    <color name="md_surface_light">#ffffff</color>
+    <color name="md_on_surface_light">#1c1c1e</color>
+    <color name="md_surface_variant_light">#f0ede8</color>
+    <color name="md_on_surface_variant_light">#8a8880</color>
+
+    <!-- Outline and borders -->
+    <color name="md_outline_light">#e8e4dc</color>
+    <color name="md_outline_variant_light">#f0ede8</color>
+
+    <!-- Error -->
+    <color name="md_error_light">#c0392b</color>
+    <color name="md_on_error_light">#ffffff</color>
+
+    <!-- Card -->
+    <color name="md_card_light">#ffffff</color>
+    <color name="md_card_foreground_light">#1c1c1e</color>
+
+    <!-- Muted -->
+    <color name="md_muted_light">#f0ede8</color>
+    <color name="md_muted_foreground_light">#8a8880</color>
+
+    <!-- Amber accent for privacy -->
+    <color name="md_amber_500">#d4a017</color>
+    <color name="md_amber_400">#e8c547</color>
+
+    <!-- Highlight -->
+    <color name="md_highlight_light">#d4a017</color>
+    <color name="md_highlight_alpha_light">#33d4a017</color>
+
+    <!-- Default declarations (light values) - required so -night variants don't crash -->
+    <color name="md_primary_dark">#1c1c1e</color>
+    <color name="md_on_primary_dark">#f8f7f4</color>
+    <color name="md_primary_container_dark">#eeece8</color>
+    <color name="md_on_primary_container_dark">#1c1c1e</color>
+    <color name="md_secondary_dark">#eeece8</color>
+    <color name="md_on_secondary_dark">#1c1c1e</color>
+    <color name="md_accent_dark">#d4a017</color>
+    <color name="md_on_accent_dark">#1c1c1e</color>
+    <color name="md_background_dark">#f8f7f4</color>
+    <color name="md_surface_dark">#ffffff</color>
+    <color name="md_on_surface_dark">#1c1c1e</color>
+    <color name="md_surface_variant_dark">#f0ede8</color>
+    <color name="md_on_surface_variant_dark">#8a8880</color>
+    <color name="md_outline_dark">#e8e4dc</color>
+    <color name="md_outline_variant_dark">#f0ede8</color>
+    <color name="md_error_dark">#c0392b</color>
+    <color name="md_on_error_dark">#ffffff</color>
+    <color name="md_card_dark">#ffffff</color>
+    <color name="md_card_foreground_dark">#1c1c1e</color>
+    <color name="md_muted_dark">#f0ede8</color>
+    <color name="md_muted_foreground_dark">#8a8880</color>
+    <color name="md_amber_500_dark">#d4a017</color>
+    <color name="md_amber_400_dark">#e8c547</color>
+    <color name="md_highlight_dark">#d4a017</color>
+    <color name="md_highlight_alpha_dark">#33d4a017</color>
+</resources>
